@@ -188,33 +188,24 @@ namespace Regexp
         static void PhoneValidation(string[] data)
         {
             Console.Clear();
-            bool doesItMatch;
-            Regex phoneparadash = new Regex(@"^\([0-9]{3}\)-[0-9]{3}-[0-9]{4}$");
+            string input;
+            Regex phonepara = new Regex(@"^\([0-9]{3}\)-[0-9]{3}-[0-9]{4}$");
 //            Regex phonedash = new Regex(@"^([0-9]){3}-([0-9]){3}-([0-9]){4}$");
-            Regex phonedot = new Regex(@"^([0-9]){3}[\.,-]([0-9]){3}[\.,-]([0-9]){4}$");
+            Regex phone = new Regex(@"^([0-9]){3}[\.,-]([0-9]){3}[\.,-]([0-9]){4}$");
 
-            for (int i = 0; i < data.Length; i++)
+            Console.Write("Please Enter a Name: ");
+            input = Console.ReadLine();
+
+            if (input == "test")
             {
-                if (phoneparadash.IsMatch(data[i]))
-                {
-                    doesItMatch = true;
-                }
-//                else if (phonedash.IsMatch(data[i]))
-//                {
-//                    doesItMatch = true;
-//                }
-                else if (phonedot.IsMatch(data[i]))
-                {
-                    doesItMatch = true;
-                }
-                else
-                {
-                    doesItMatch = false;
-                }
-                Console.Write("{0,30} is a phone number?: ", data[i]);
-                Console.WriteLine(doesItMatch);
+                Test(data, phonepara, phone);
+            }
+            else
+            {
+
             }
         }
+      
 
         static void DateValidation(string[] data)
         {
