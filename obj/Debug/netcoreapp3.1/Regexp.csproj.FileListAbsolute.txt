@@ -1,0 +1,13 @@
+C:\DevBuild4\Regexp\bin\Debug\netcoreapp3.1\Regexp.exe
+C:\DevBuild4\Regexp\bin\Debug\netcoreapp3.1\Regexp.deps.json
+C:\DevBuild4\Regexp\bin\Debug\netcoreapp3.1\Regexp.runtimeconfig.json
+C:\DevBuild4\Regexp\bin\Debug\netcoreapp3.1\Regexp.runtimeconfig.dev.json
+C:\DevBuild4\Regexp\bin\Debug\netcoreapp3.1\Regexp.dll
+C:\DevBuild4\Regexp\bin\Debug\netcoreapp3.1\Regexp.pdb
+C:\DevBuild4\Regexp\obj\Debug\netcoreapp3.1\Regexp.csprojAssemblyReference.cache
+C:\DevBuild4\Regexp\obj\Debug\netcoreapp3.1\Regexp.AssemblyInfoInputs.cache
+C:\DevBuild4\Regexp\obj\Debug\netcoreapp3.1\Regexp.AssemblyInfo.cs
+C:\DevBuild4\Regexp\obj\Debug\netcoreapp3.1\Regexp.csproj.CoreCompileInputs.cache
+C:\DevBuild4\Regexp\obj\Debug\netcoreapp3.1\Regexp.dll
+C:\DevBuild4\Regexp\obj\Debug\netcoreapp3.1\Regexp.pdb
+C:\DevBuild4\Regexp\obj\Debug\netcoreapp3.1\Regexp.genruntimeconfig.cache
