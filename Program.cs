@@ -120,8 +120,8 @@ namespace Regexp
         {
             Console.Clear();
             string input;
-            Regex single = new Regex(@"^[A-Z][a-z]\w{1,30}$");
-            Regex firstlast = new Regex(@"^([A-Z][a-z]\w+\s[A-Z][a-z]\w+)\w{1,30}$");
+            Regex single = new Regex(@"^[A-Z][A-Za-z]\w{1,30}$");
+            Regex firstlast = new Regex(@"^([A-Z][a-z]\w+\s[A-Z][a-zA-Z]\w+){1,30}$");
 
             Console.WriteLine("You may enter test to pull test Data");
             Console.Write("Please Enter a Name: ");
@@ -185,7 +185,7 @@ namespace Regexp
             Console.Clear();
             string input;
             bool doesItMatch;
-            Regex Date = new Regex(@"^[0-1][0-9]/[0-3][0-9]/[0-1][0-9][0-9][0-9]$");
+            Regex Date = new Regex(@"^(0[1-9]|1[1-2])/(3[01]|[12][0-9]|0[1-9])/\d{4}$");
 
             Console.WriteLine("You may enter test to pull test Data");
             Console.Write("Please Enter a Date (mm/dd/yyyy): ");
@@ -251,6 +251,7 @@ namespace Regexp
             string[] testdata =
             {
                 "",
+                "james@james.com",
                 "Chuck@TechU..om",
                 "David@Quick@enLoans.com",
                 "Jeff@Grandcircus.com",
@@ -261,11 +262,20 @@ namespace Regexp
                 "Bob@Burgerscom",
                 "Keith@Voltron.defender",
                 "David",
+                "David McDonald",
+                "Dav4d",
+                "AbcdeFghijklmnopqrstuvwxyzextrastuff",
                 "Abcdefghijklmn Opqrstuvwxyzextrastuff",
                 "That Guy",
                 "N0t Name",
+                "D@vid",
                 "1/12/2020",
                 "12/31/1999",
+                "01/12/2000",
+                "00/01/1999",
+                "04/00/1999",
+                "12/32/1999",
+                "07/07/0000",
                 "15/12/1986",
                 "(1d6)-456-7890",
                 "(123)-456-7890",
