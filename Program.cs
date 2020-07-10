@@ -58,6 +58,7 @@ namespace Regexp
             {
                 Console.Clear();
                 Console.WriteLine("Welcome to the Data Validator!");
+                Console.WriteLine("You may enter test on a sub menu to pull test Data");
                 Console.WriteLine();
                 Console.WriteLine("Type N for Name");
                 Console.WriteLine("Type E for E-mail");
@@ -94,7 +95,7 @@ namespace Regexp
             // assuming my most likely client would want thier e-mail addresses to validate
             // *** Need to ask the business if this is acceptable ***
 
-            Console.WriteLine("You may enter test to pull test Data");
+            //Console.WriteLine("You may enter test to pull test Data");
             Console.Write("Please Enter an E-mail Address: ");
             input = Console.ReadLine();
 
@@ -120,10 +121,10 @@ namespace Regexp
         {
             Console.Clear();
             string input;
-            Regex single = new Regex(@"^[A-Z][A-Za-z]\w{1,30}$");
-            Regex firstlast = new Regex(@"^([A-Z][a-z]\w+\s[A-Z][a-zA-Z]\w+){1,30}$");
+            Regex single = new Regex(@"^[A-Z][A-Za-z]{1,30}$");
+            Regex firstlast = new Regex(@"^([A-Z][a-z]+\s[A-Z][a-zA-Z]+){1,30}$");
 
-            Console.WriteLine("You may enter test to pull test Data");
+            //Console.WriteLine("You may enter test to pull test Data");
             Console.Write("Please Enter a Name: ");
             input = Console.ReadLine();
 
@@ -161,7 +162,7 @@ namespace Regexp
 //            Regex phonedash = new Regex(@"^([0-9]){3}-([0-9]){3}-([0-9]){4}$");
             Regex phone = new Regex(@"^([0-9]){3}[\.,-]([0-9]){3}[\.,-]([0-9]){4}$");
 
-            Console.WriteLine("You may enter test to pull test Data");
+            //Console.WriteLine("You may enter test to pull test Data");
             Console.Write("Please Enter a Phone number: ");
             input = Console.ReadLine();
 
@@ -187,7 +188,7 @@ namespace Regexp
             bool doesItMatch;
             Regex Date = new Regex(@"^(0[1-9]|1[1-2])/(3[01]|[12][0-9]|0[1-9])/\d{4}$");
 
-            Console.WriteLine("You may enter test to pull test Data");
+            //Console.WriteLine("You may enter test to pull test Data");
             Console.Write("Please Enter a Date (mm/dd/yyyy): ");
             input = Console.ReadLine();
 
